@@ -18,16 +18,12 @@ nav {
     margin-right: 10px;
     font-family: 'roboto mono', monospace;
 }
-
-/* Navigation list styling */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 100%;
 }
-
-/* Navigation links styling */
 nav a {
     color: #fff;
     text-decoration: none;
@@ -36,8 +32,6 @@ nav a {
     padding: 8px 0 8px 16px;
     text-align: center;
 }
-
-/* Navigation hover effect */
 nav ul li a:hover {
     background-color: #ae3a49;
 }
@@ -85,6 +79,9 @@ main p {
     font-size: larger;
     line-height: 1.5em;
     letter-spacing: 1px;
+}
+#welcome{
+    font-size:1em;
 }
 
 /* Aside content */
