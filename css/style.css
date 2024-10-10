@@ -137,7 +137,7 @@ footer {
 }
 
 #carousel img {
-    max-height: 300px;
+    max-height: 250px;
     aspect-ratio: auto 300 / 400;
     border-radius: 10px;
 }

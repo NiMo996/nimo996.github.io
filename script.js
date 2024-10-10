@@ -39,8 +39,24 @@ const urls = [
 ].map(url => { (new Image()).src = url; return url })
 
 const images = document.querySelectorAll('#carousel img')
+const nextButton = document.querySelector('#next')
+const prevButton = document.querySelector('#prev')
 
 let currentImage = 0
+
+setInterval(() => {
+  currentImage++
+  showImages()
+}, 5000)
+nextButton.addEventListener('click', () => {
+  currentImage++
+  showImages()
+})
+prevButton.addEventListener('click', () => {
+  currentImage--
+  showImages()
+})
+
 const showImages = () => {
   const offset = currentImage % urls.length
   images.forEach((image, index) => {
