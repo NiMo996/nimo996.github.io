@@ -66,3 +66,38 @@ const showImages = () => {
 }
 
 showImages()
+
+//Week 7: To Do List Array of Objects with Local Storage appended to the DOM as a list
+
+const todokey = "todo-list"
+
+let todos = JSON.parse(localStorage.getItem(todokey)) || [];
+
+
+  //if one exists, append it to the DOM, else create an empty array to store the todos
+  const ul = document.querySelector('.todo-list')
+  const addButton = document.querySelector('#add-todo')
+  const input = document.querySelector('#new-todo')
+
+//function to render the todos to the DOM, 
+  const renderTodos = () => { //returns renderTodos as a function that takes no arguments and can be called later
+  ul.innerHTML = ''
+  todos.forEach(todo => { 
+      const li = document.createElement('li')
+      li.classList.add('todo-item') //Returns the value of element's class content attribute. Can be set to change it.
+      li.textContent = todo.text
+      ul.appendChild(li)
+  })
+  }
+  //on page load, this renders the todos
+  renderTodos()
+
+  addButton.addEventListener('click', () => {
+      const text = input.value.trim();
+      if (text) {
+          todos.push({ text, completed: false })
+          localStorage.setItem(todokey, JSON.stringify(todos))
+          renderTodos()
+          input.value = ''
+      }
+  })
