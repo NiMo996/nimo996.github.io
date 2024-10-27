@@ -6,6 +6,7 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js" defer></script> <!-- defer attribute tells the browser to execute the script after the document has been parsed -->
+    <script src ="site.js" defer></script>
 </head>
 <body>
 <div id="wrapper">
@@ -43,6 +44,17 @@
         
         <input type="text" id="new-todo" placeholder="Add a new item">
         <button type="button" id="add-todo">Add To Do</button>            
+    </div>
+    <hr>
+    <div class="display-pokemon-api">
+        <h2>Pokemon API</h2>
+        <p>
+            Intended Outcome: The objective was to fetch and display a random Pokémon from the PokeAPI. 
+            The functionality includes the getRandomPokemon function, which retrieves a random Pokémon 
+            object using a dynamically generated URL, and the renderPokemon function, which creates an 
+            image element for the Pokémon's front sprite and appends it to the DOM. Key concepts illustrated are asynchronous functions using IIFE's and the fetch API.
+        <div class="pokemon-container"></div>
+        <button type="button" id="fetch-pokemon">Fetch Pokemon</button>
     </div>
         </main>
         <footer>

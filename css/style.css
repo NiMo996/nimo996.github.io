@@ -236,4 +236,55 @@ footer {
       margin-top: 10px;
     }
   }
-  
+
+.pokemon-container {
+    position: relative;
+    width: 260px; /* Adjusted width to resemble traditional Pokémon card */
+    height: 370px; /* Adjusted height to match proportions */
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #f2e4a9, #f2e4a9); /* Light yellow background similar to traditional cards */
+    border: 8px solid #d8a800; /* Yellow border for authenticity */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.pokemon-container h2.name {
+    font-size: 1.4em;
+    color: #333;
+    margin: 0;
+    padding: 5px;
+    background: #f7f7f7; /* Light gray/white background for name */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+    width: 80%;
+    margin: 8px auto 5px;
+}
+
+.pokemon-container img {
+    width: 180px; /* Adjusted width to fit in the card's image section */
+    height: 140px; /* Proportional height */
+    margin: 30px auto;
+    display: block;
+    border-radius: 5px;
+    border: 2px solid #ccc; /* Subtle border around image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-container .details {
+    font-size: 0.9em;
+    color: #333;
+    background: #f7f7f7;
+    border: #333 solid 1px;
+    padding: 10px;
+    display: border-box;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 90%;
+    margin: 20 auto;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
